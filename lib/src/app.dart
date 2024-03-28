@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:integrationtest/core/routes/app_routes.dart';
 
-import 'authentication/view/authentication_view.dart';
+class MyApp extends ConsumerWidget {
+  const MyApp({super.key});
 
-class MyApp extends MaterialApp {
-  MyApp({
-    super.key,
-  }) : super(
-          title: 'IntegrationTest Flutter with Firebase and Gcloud',
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-            useMaterial3: true,
-          ),
-          home: const AuthenticationView(),
-        );
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final router = ref.watch(routerProvider);
+    return MaterialApp.router(
+      routeInformationParser: router.routeInformationParser,
+      routerDelegate: router.routerDelegate,
+      routeInformationProvider: router.routeInformationProvider,
+    );
+  }
 }
