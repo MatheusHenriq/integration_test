@@ -6,7 +6,7 @@ import 'package:integrationtest/src/authentication/view/authentication_view.dart
 import 'package:integrationtest/src/home/view/home_view.dart';
 
 void main() {
-  IntegrationTestWidgetsFlutterBinding.ensureInitialized(); // NEW
+  IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
   testWidgets('Sign In App', (tester) async {
     await tester.pumpWidget(const ProviderScope(child: MyApp()));

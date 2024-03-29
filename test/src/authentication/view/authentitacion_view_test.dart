@@ -22,7 +22,7 @@ void main() {
     testWidgets(
         'GIVEN the authentication UI is open '
         'WHEN I type a value into the password field  '
-        'THEN I see the password obscurd ', (WidgetTester tester) async {
+        'THEN I see the password obscure ', (WidgetTester tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: AuthenticationView(),
