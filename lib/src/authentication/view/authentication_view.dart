@@ -52,7 +52,7 @@ class AuthenticationView extends StatelessWidget {
                 ),
                 obscureText: true,
                 validator: (value) {
-                  return (value?.isEmpty ?? false) || (value?.length ?? 0) > 8 ? 'Enter a valid password' : null;
+                  return (value?.isEmpty ?? false) || (value?.length ?? 0) < 8 ? 'Enter a valid password' : null;
                 },
               ),
               const SizedBox(
