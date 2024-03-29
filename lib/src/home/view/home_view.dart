@@ -28,5 +28,5 @@ class HomeView extends StatelessWidget {
 }
 
 class HomeViewConstants {
-  static const Key homeCenterWidgetKey = Key("AuthenticationView_homeCenterWidgetKey");
+  static const Key homeCenterWidgetKey = Key("HomeViewConstants_homeCenterWidgetKey");
 }
