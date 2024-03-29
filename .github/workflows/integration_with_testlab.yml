@@ -1,11 +1,11 @@
-name: CICD
+name: integrationTest
 
 on:
   push:
     branches: ["main"]
 
 jobs:
-  ci:
+  integrationTest:
     name: Continuos Integration
     runs-on: ubuntu-latest
     steps: 
@@ -54,30 +54,31 @@ jobs:
         with:
           name: android-release
           path: build/app/outputs/flutter-apk/app-release.apk
-          
+    
+      
         
-  cd: 
-    name: Continuous Delivery
-    needs: ci
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: Get Android Build from artifacts
-        uses: actions/download-artifact@v2
-        with:
-           name: android-release
-      - name: Install firebase
-        run: npm install firebase-tools -g 
+#   cd: 
+#     name: Continuous Delivery
+#     needs: ci
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v1
+#       - name: Get Android Build from artifacts
+#         uses: actions/download-artifact@v2
+#         with:
+#            name: android-release
+#       - name: Install firebase
+#         run: npm install firebase-tools -g 
       
-      - name: Distribute app in firebase for testers
-        run: |
-          firebase appdistribution:distribute app-release.apk \
-          --app "${{ secrets.FIREBASE_ANDROID_ID }}" \
-          --release-notes "Hello GDG" \
-          --groups "gdg-users, ifipi-students" \
-          --token "${{ secrets.FIREBASE_TOKEN }}"
+#       - name: Distribute app in firebase for testers
+#         run: |
+#           firebase appdistribution:distribute app-release.apk \
+#           --app "${{ secrets.FIREBASE_ANDROID_ID }}" \
+#           --release-notes "CICD" \
+#           --groups "gdg-users, ifipi-students" \
+#           --token "${{ secrets.FIREBASE_TOKEN }}"
       
-       
+
 
       
       
