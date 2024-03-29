@@ -11,18 +11,18 @@ jobs:
     steps: 
       - uses: actions/checkout@v3
       
-      - name: Download Android key
-        id: android_keystore
-        uses: timheuer/base64-to-file@v1.0.3
-        with:
-          fileName: gdg-keystore.jks
-          encodedString: ${{ secrets.KEY_BASE64 }}
-      - name: Create key.properties
-        run: |
-          echo "storeFile=${{ steps.android_keystore.outputs.filePath }}" > android/key.properties
-          echo "storePassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
-          echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
-          echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/key.properties
+    #   - name: Download Android key
+    #     id: android_keystore
+    #     uses: timheuer/base64-to-file@v1.0.3
+    #     with:
+    #       fileName: gdg-keystore.jks
+    #       encodedString: ${{ secrets.KEY_BASE64 }}
+    #   - name: Create key.properties
+    #     run: |
+    #       echo "storeFile=${{ steps.android_keystore.outputs.filePath }}" > android/key.properties
+    #       echo "storePassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
+    #       echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
+    #       echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/key.properties
       
       
       - uses: actions/setup-java@v3
@@ -37,26 +37,32 @@ jobs:
           channel: 'stable'
           cache: true
       
-      - name: Delete depedencies
-        run: flutter clean
+    #   - name: Delete depedencies
+    #     run: flutter clean
         
-      - name: Get Dependencies
-        run: flutter pub get
+    #   - name: Get Dependencies
+    #     run: flutter pub get
         
       - name: Flutter tests
         run: flutter test
         
       - name: Flutter build
-        run: flutter build apk --release --build-number=${{ github.run_number }}
+        run: flutter build apk
         
-      - name: Upload Android APK 
-        uses: actions/upload-artifact@v2
-        with:
-          name: android-release
-          path: build/app/outputs/flutter-apk/app-release.apk
+    #   - name: Upload Android APK 
+    #     uses: actions/upload-artifact@v2
+    #     with:
+    #       name: android-release
+    #       path: build/app/outputs/flutter-apk/app-release.apk
     
-      
-        
+      - name: Generate apk for testlab
+        run: |
+            pushd android
+            flutter build apk
+            ./gradlew app:assembleAndroidTest
+            ./gradlew app:assembleDebug -Ptarget="integration_test/app_test.dart"
+            popd
+                
 #   cd: 
 #     name: Continuous Delivery
 #     needs: ci
