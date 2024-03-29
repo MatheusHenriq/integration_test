@@ -6,7 +6,7 @@ on:
 
 jobs:
   integrationTest:
-    name: Continuos Integration
+    name: integration Test
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v3
@@ -46,8 +46,8 @@ jobs:
       - name: Flutter tests
         run: flutter test
         
-      - name: Flutter build
-        run: flutter build apk
+    #   - name: Flutter build
+    #     run: flutter build apk
         
     #   - name: Upload Android APK 
     #     uses: actions/upload-artifact@v2
@@ -60,7 +60,7 @@ jobs:
             pushd android
             flutter build apk
             ./gradlew app:assembleAndroidTest
-            ./gradlew app:assembleDebug -Ptarget="integration_test/app_test.dart"
+            ./gradlew app:assembleDebug -Ptarget="integration_test/sign_in_test.dart"
             popd
                 
 #   cd: 
