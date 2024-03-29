@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "708202247479",
+    "project_id": "integration-test-f",
+    "storage_bucket": "integration-test-f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708202247479:android:5442d12543a94fb17d56b2",
+        "android_client_info": {
+          "package_name": "com.example.integrationtest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmxpBwD6e6iOTu1Stms9hVVbJ78GRLrQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
