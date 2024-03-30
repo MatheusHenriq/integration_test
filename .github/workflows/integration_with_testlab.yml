@@ -43,12 +43,12 @@ jobs:
         uses: timheuer/base64-to-file@v1.0.3
         with:
             fileName: integration_test_gcloud.json
-            encodedString: ${{secrets.INTEGRATION_TEST_GCLOUD_CONFIG}}      
+            encodedString: ${{  secrets.INTEGRATION_TEST_GCLOUD_CONFIG  }}      
         
       - name: Configure the gcloud account
         run: |
           
-           gcloud auth activate-service-account --key-file="${{step.gcloud_config.outputs.filePath}}"
+           gcloud auth activate-service-account --key-file="${{  steps.gcloud_config.outputs.filePath  }}"
            pushd build
             gcloud firebase test android run --type=instrumentation \
             --app app/outputs/apk/debug/app-debug.apk \
