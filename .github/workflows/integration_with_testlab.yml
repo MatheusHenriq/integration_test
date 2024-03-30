@@ -34,6 +34,9 @@ jobs:
       - uses: google-github-actions/setup-gcloud@v2.1.0
         with:
           project_id: "integration-test-f"
+    
+      - name: 'Use gcloud CLI'
+        run: 'gcloud info'
 
       - name: Download gcloud config json file
         id: gcloud_config
@@ -45,8 +48,7 @@ jobs:
       - name: Configure the gcloud account
         run: |
           
-
-           gcloud auth activate-service-account --key-file="$(step.gcloud_config.outputs.filePath)"
+           gcloud auth activate-service-account --key-file="${{step.gcloud_config.outputs.filePath}}"
            pushd build
             gcloud firebase test android run --type=instrumentation \
             --app app/outputs/apk/debug/app-debug.apk \
