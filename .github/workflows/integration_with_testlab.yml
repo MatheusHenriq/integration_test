@@ -35,19 +35,19 @@ jobs:
         with:
           project_id: "integration-test-f"
 
-      - name: Download Android key
+      - name: Download gcloud config json file
         id: gcloud_config
         uses: timheuer/base64-to-file@v1.0.3
         with:
             fileName: integration_test_gcloud.json
-            encodedString: ${{ secrets.INTEGRATION_TEST_GCLOUD_CONFIG }}      
+            encodedString: ${{secrets.INTEGRATION_TEST_GCLOUD_CONFIG}}      
         
       - name: Configure the gcloud account
         run: |
-           pushd build
+          
 
-            gcloud auth activate-service-account --key-file="$(gcloud_config.outputs.filePath)"
-            
+           gcloud auth activate-service-account --key-file="$(step.gcloud_config.outputs.filePath)"
+           pushd build
             gcloud firebase test android run --type=instrumentation \
             --app app/outputs/apk/debug/app-debug.apk \
             --test /app/outputs/apk/androidTest/debug/app-debug-androidTest.apk \
@@ -56,7 +56,7 @@ jobs:
             --orientations=portrait \
             --use-orchestrator \
             --timeout 3m \
-            --results-bucket=gs://ja-entendi-app-dev.appspot.com \
+            --results-bucket=gs:/integration-test-f.appspot.com \
             --results-dir=tests/firebase
 
                         
