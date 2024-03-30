@@ -34,7 +34,6 @@ jobs:
       - uses: google-github-actions/setup-gcloud@v2.1.0
         with:
           project_id: "integration-test-f"
-    
       - name: Download gcloud config json file
         id: gcloud_config
         uses: timheuer/base64-to-file@v1.0.3
