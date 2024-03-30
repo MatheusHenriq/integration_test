@@ -35,9 +35,6 @@ jobs:
         with:
           project_id: "integration-test-f"
     
-      - name: 'Use gcloud CLI'
-        run: 'gcloud info'
-
       - name: Download gcloud config json file
         id: gcloud_config
         uses: timheuer/base64-to-file@v1.0.3
@@ -52,7 +49,7 @@ jobs:
            pushd build
             gcloud firebase test android run --type=instrumentation \
             --app app/outputs/apk/debug/app-debug.apk \
-            --test /app/outputs/apk/androidTest/debug/app-debug-androidTest.apk \
+            --test app/outputs/apk/androidTest/debug/app-debug-androidTest.apk \
             --device-ids=Pixel2 \
             --os-version-ids=29 \
             --orientations=portrait \
