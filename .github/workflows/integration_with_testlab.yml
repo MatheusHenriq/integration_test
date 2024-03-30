@@ -2,7 +2,7 @@ name: integrationTest
 
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
 
 jobs:
   integrationTest:
@@ -30,8 +30,33 @@ jobs:
             ./gradlew app:assembleAndroidTest
             ./gradlew app:assembleDebug -Ptarget="integration_test/sign_in_test.dart"
             popd
-      - name: Set up gcloud Cloud SDK environment
+
       - uses: google-github-actions/setup-gcloud@v2.1.0
         with:
           project_id: "integration-test-f"
+
+      - name: Download Android key
+        id: gcloud_config
+        uses: timheuer/base64-to-file@v1.0.3
+        with:
+            fileName: integration_test_gcloud.json
+            encodedString: ${{ secrets.INTEGRATION_TEST_GCLOUD_CONFIG }}      
+        
+      - name: Configure the gcloud account
+        run: |
+           pushd build
+
+            gcloud auth activate-service-account --key-file="$(gcloud_config.outputs.filePath)"
+            
+            gcloud firebase test android run --type=instrumentation \
+            --app app/outputs/apk/debug/app-debug.apk \
+            --test /app/outputs/apk/androidTest/debug/app-debug-androidTest.apk \
+            --device-ids=Pixel2 \
+            --os-version-ids=29 \
+            --orientations=portrait \
+            --use-orchestrator \
+            --timeout 3m \
+            --results-bucket=gs://ja-entendi-app-dev.appspot.com \
+            --results-dir=tests/firebase
+
                         
