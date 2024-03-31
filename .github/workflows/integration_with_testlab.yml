@@ -45,7 +45,7 @@ jobs:
         run: |
           
            gcloud auth activate-service-account --key-file="${{  steps.gcloud_config.outputs.filePath  }}"
-           pushd 
+           pushd build
            gcloud firebase test android run --type=instrumentation \
            --app "app/outputs/apk/debug/app-debug.apk" \
            --test "app/outputs/apk/androidTest/debug/app-debug-androidTest.apk" \
