@@ -1,15 +1,13 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:integration_test/integration_test.dart';
-import 'package:integrationtest/src/app.dart';
+import 'package:integrationtest/main.dart' as app;
 import 'package:integrationtest/src/authentication/view/authentication_view.dart';
 import 'package:integrationtest/src/home/view/home_view.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
-
   testWidgets('Sign In App', (tester) async {
-    await tester.pumpWidget(const ProviderScope(child: MyApp()));
+    app.main();
     await tester.pumpAndSettle();
     expect(find.byKey(AuthenticationViewConstants.userNameKey), findsOneWidget);
     expect(find.byKey(AuthenticationViewConstants.passwordKey), findsOneWidget);
