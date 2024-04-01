@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "a646ace0cc49ee7f9d7da19bee4baaf7dfa79aaf829c1adad0e449510c0f50aa"
+build_start_time: [1711989926, 873410000]
+build_end_time: [1711989926, 905242000]
+inputs:
+  "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Runner/AppDelegate.swift": !dirty [1711816847, 934685786]

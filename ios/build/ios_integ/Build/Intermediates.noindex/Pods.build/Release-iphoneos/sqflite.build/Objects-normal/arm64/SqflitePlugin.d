@@ -1,0 +1,32 @@
+dependencies: \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Intermediates.noindex/Pods.build/Release-iphoneos/sqflite.build/module.modulemap \
+  /Users/matheushenrique/.pub-cache/hosted/pub.dev/sqflite-2.3.2/darwin/Classes/SqflitePlugin.m \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/Target\ Support\ Files/sqflite/sqflite-prefix.pch \
+  /Users/matheushenrique/.pub-cache/hosted/pub.dev/sqflite-2.3.2/darwin/Classes/SqflitePlugin.h \
+  /Users/matheushenrique/.pub-cache/hosted/pub.dev/sqflite-2.3.2/darwin/Classes/SqfliteImport.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Modules/module.modulemap \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/Flutter.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterAppDelegate.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterMacros.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterPlugin.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterChannels.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterCodecs.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterPlatformViews.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterTexture.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterCallbackCache.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterDartProject.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterEngine.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterEngineGroup.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterHeadlessDartRunner.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h \
+  /Users/matheushenrique/src/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64/Flutter.framework/Headers/FlutterViewController.h \
+  /Users/matheushenrique/.pub-cache/hosted/pub.dev/sqflite-2.3.2/darwin/Classes/SqfliteDatabase.h \
+  /Users/matheushenrique/.pub-cache/hosted/pub.dev/sqflite-2.3.2/darwin/Classes/SqfliteCursor.h \
+  /Users/matheushenrique/.pub-cache/hosted/pub.dev/sqflite-2.3.2/darwin/Classes/SqfliteOperation.h \
+  /Users/matheushenrique/.pub-cache/hosted/pub.dev/sqflite-2.3.2/darwin/Classes/SqfliteDarwinImport.h \
+  /Users/matheushenrique/.pub-cache/hosted/pub.dev/sqflite-2.3.2/darwin/Classes/SqfliteDarwinDB.h \
+  /Users/matheushenrique/.pub-cache/hosted/pub.dev/sqflite-2.3.2/darwin/Classes/SqfliteDarwinDatabase.h \
+  /Users/matheushenrique/.pub-cache/hosted/pub.dev/sqflite-2.3.2/darwin/Classes/SqfliteDarwinResultSet.h \
+  /Users/matheushenrique/.pub-cache/hosted/pub.dev/sqflite-2.3.2/darwin/Classes/SqfliteDarwinDatabaseAdditions.h \
+  /Users/matheushenrique/.pub-cache/hosted/pub.dev/sqflite-2.3.2/darwin/Classes/SqfliteDarwinDatabaseQueue.h

@@ -1,0 +1,29 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "d66aacaad414cab2882682c22ddad034827c9ffe9ae7c22f8664d89597d504c5"
+build_start_time: [1711989912, 742367000]
+build_end_time: [1711989914, 631990000]
+inputs:
+  ? "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Heartbeat.swift"
+  : [1711989888, 124090662]
+  ? "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatController.swift"
+  : [1711989888, 124993968]
+  ? "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatLoggingTestUtils.swift"
+  : [1711989888, 125553894]
+  ? "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatStorage.swift"
+  : [1711989888, 125961150]
+  ? "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsBundle.swift"
+  : [1711989888, 126278572]
+  ? "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsPayload.swift"
+  : [1711989888, 126826164]
+  ? "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/RingBuffer.swift"
+  : [1711989888, 124338083]
+  ? "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Storage.swift"
+  : [1711989888, 123795324]
+  ? "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/StorageFactory.swift"
+  : [1711989888, 127082126]
+  ? "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/WeakContainer.swift"
+  : [1711989888, 126569535]
+  ? "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatController.swift"
+  : [1711989888, 124671297]
+  ? "/Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatsPayload.swift"
+  : [1711989888, 125166388]

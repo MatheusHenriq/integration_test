@@ -1,0 +1,11 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-ios ]
+flags:           [ not_app_extension_safe ]
+install-name:    '@rpath/integration_test.framework/integration_test'
+exports:
+  - targets:         [ arm64-ios ]
+    symbols:         [ _integration_testVersionNumber, _integration_testVersionString ]
+    objc-classes:    [ FLTIntegrationTestRunner, IntegrationTestIosTest, IntegrationTestPlugin, 
+                       PodsDummy_integration_test ]
+...

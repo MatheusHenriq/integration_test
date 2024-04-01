@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/RunnerTests/RunnerTests.m \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/integration_test/integration_test.framework/Modules/module.modulemap \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Modules/module.modulemap \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/Flutter.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterAppDelegate.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterMacros.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterPlugin.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterChannels.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterCodecs.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterPlatformViews.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterTexture.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterCallbackCache.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterDartProject.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterEngine.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterEngineGroup.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterHeadlessDartRunner.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/Flutter.framework/Headers/FlutterViewController.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/integration_test/integration_test.framework/Headers/integration_test-umbrella.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/integration_test/integration_test.framework/Headers/FLTIntegrationTestRunner.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/integration_test/integration_test.framework/Headers/IntegrationTestIosTest.h \
+  /Users/matheushenrique/Documents/personal/mobile/flutter/integrationtest/ios/build/ios_integ/Build/Products/Release-iphoneos/integration_test/integration_test.framework/Headers/IntegrationTestPlugin.h

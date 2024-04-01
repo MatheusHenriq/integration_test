@@ -75,7 +75,7 @@ class AuthenticationView extends StatelessWidget {
   }
 }
 
-class AuthenticationViewConstants {
+abstract class AuthenticationViewConstants {
   static const Key userNameKey = Key("AuthenticationView_userNameKey");
   static const Key passwordKey = Key("AuthenticationView_passwordKey");
   static const Key loginButtonKey = Key("AuthenticationView_loginButtonKey");

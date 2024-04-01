@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-ios ]
+flags:           [ not_app_extension_safe ]
+install-name:    '@rpath/GoogleUtilities.framework/GoogleUtilities'
+exports:
+  - targets:         [ arm64-ios ]
+    symbols:         [ _GULGetLoggerLevel, _GULIsLoggableLevel, _GULLogBasic, _GULLogDebug, 
+                       _GULLogError, _GULLogInfo, _GULLogNotice, _GULLogWarning, 
+                       _GULLoggerEnableSTDERR, _GULLoggerForceDebug, _GULLoggerInitializeASL, 
+                       _GULLoggerRegisterVersion, _GULNSDataZlibErrorDomain, _GULNSDataZlibErrorKey, 
+                       _GULNSDataZlibRemainingBytesKey, _GULSetLoggerLevel, _GoogleUtilitiesVersionNumber, 
+                       _GoogleUtilitiesVersionString, _IsAppEncrypted, _kGULHeartbeatStorageDirectory, 
+                       _kGULKeychainUtilsErrorDomain, _kGULLoggerASLClientFacilityName, 
+                       _kGULSecureCodingError ]
+    objc-classes:    [ GULAppEnvironmentUtil, GULHeartbeatDateStorage, GULHeartbeatDateStorageUserDefaults, 
+                       GULKeychainStorage, GULKeychainUtils, GULLoggerWrapper, GULNetworkInfo, 
+                       GULSecureCoding, GULURLSessionDataResponse, PodsDummy_GoogleUtilities ]
+...
