@@ -13,12 +13,12 @@ void main() {
     expect(find.byKey(AuthenticationViewConstants.passwordKey), findsOneWidget);
     expect(find.byKey(AuthenticationViewConstants.loginButtonKey), findsOneWidget);
     await tester.enterText(find.byKey(AuthenticationViewConstants.userNameKey), "matheusdeveloper.henrique@gmail.com");
-    await tester.pump(const Duration(seconds: 2));
+    await tester.pumpAndSettle();
     await tester.enterText(find.byKey(AuthenticationViewConstants.passwordKey), "integrationtestpassword");
-    await tester.pump(const Duration(seconds: 2));
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(AuthenticationViewConstants.loginButtonKey));
-    await tester.pump(const Duration(seconds: 2));
+    await tester.pumpAndSettle();
     expect(find.byKey(HomeViewConstants.homeCenterWidgetKey), findsOneWidget);
-    await tester.pump(const Duration(seconds: 2));
+    await tester.pumpAndSettle();
   });
 }

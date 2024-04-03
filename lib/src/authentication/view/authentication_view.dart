@@ -26,6 +26,7 @@ class AuthenticationView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextFormField(
+                controller: TextEditingController(),
                 key: AuthenticationViewConstants.userNameKey,
                 decoration: const InputDecoration(
                   hintText: "Username",
@@ -43,6 +44,7 @@ class AuthenticationView extends StatelessWidget {
                 height: 12,
               ),
               TextFormField(
+                controller: TextEditingController(),
                 key: AuthenticationViewConstants.passwordKey,
                 decoration: const InputDecoration(
                   hintText: "Password",
