@@ -4,11 +4,6 @@ dev_target="15.7"
 flutter build ios integration_test/sign_in_test.dart --release
 
 pushd ios
-    # xcodebuild -workspace Runner.xcworkspace \
-    #            -scheme Runner \
-    #            -configuration Flutter/Release.xcconfig \
-    #            -derivedDataPath $output \
-    #            -sdk iphoneos build-for-testing 
 
     xcodebuild build-for-testing \
     -workspace Runner.xcworkspace \
