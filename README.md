@@ -1,0 +1,1 @@
+Hello, if you wanna see the details about this code implementation and purpose, see my article on medium -> https://medium.com/@matheusdeveloper.henrique/flutter-integration-test-with-gcloud-firebase-testlab-and-github-actions-31ba1f2c173c
